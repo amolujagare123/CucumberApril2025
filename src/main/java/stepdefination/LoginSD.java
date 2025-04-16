@@ -16,8 +16,8 @@ public class LoginSD {
     {
         System.out.println("I am on login page");
 
-         driver = new ChromeDriver();
-        driver.manage().window().maximize();
+
+
         driver.get("https://stock.scriptinglogic.in/");
     }
 
@@ -70,5 +70,15 @@ public class LoginSD {
         driver.findElement(By.id("login-username")).sendKeys(username);
         driver.findElement(By.id("login-password")).sendKeys(password);
 
+    }
+
+    @Given("i open browser")
+    public void iOpenBrowser() {
+        driver = new ChromeDriver();
+    }
+
+    @And("i maximize it")
+    public void iMaximizeIt() {
+        driver.manage().window().maximize();
     }
 }

@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
 
         features = "Features",
         glue = "stepdefination",
-        tags = "@addMembers"
+        tags = "@login"
+     // ,  dryRun = true
 )
 public class TestRunner {
 }

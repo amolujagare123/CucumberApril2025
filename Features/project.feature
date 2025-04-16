@@ -1,5 +1,10 @@
 Feature: all login scenario
 
+
+  Background: open browser
+    Given i open browser
+    And i maximize it
+
   @valid @login
   Scenario: to test the functionality of login button for valid inpuy
     Given I am on login page
